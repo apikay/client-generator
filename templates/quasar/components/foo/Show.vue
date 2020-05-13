@@ -51,9 +51,9 @@
 </template>
 
 <script>
-import { show } from '../../utils/vuexer';
-import { Breadcrumb, Toolbar, Loading } from '../../common/components';
-import ShowMixin from '../../common/mixins/ShowMixin';
+import { show } from '@gen/utils/vuexer';
+import { Breadcrumb, Toolbar, Loading } from '@gen/common/components';
+import ShowMixin from '@gen/common/mixins/ShowMixin';
 const servicePrefix = '{{{titleUcFirst}}}';
 const { getters, actions } = show(servicePrefix);
 

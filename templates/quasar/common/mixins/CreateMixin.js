@@ -1,4 +1,4 @@
-import { error } from '../../utils/notify';
+import { error } from '@gen/utils/notify';
 
 export default {
   watch: {

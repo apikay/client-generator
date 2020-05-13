@@ -1,2 +1,2 @@
-import makeTypes from '../../../../common/store/create/mutation_types';
+import makeTypes from '@gen/common/store/create/mutation_types';
 export default makeTypes('{{{uc}}}');

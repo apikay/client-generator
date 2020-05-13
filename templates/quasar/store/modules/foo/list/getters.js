@@ -1,1 +1,1 @@
-export * from "../../../../common/store/list/getters";
+export * from "@gen/common/store/list/getters";

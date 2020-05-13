@@ -1,5 +1,5 @@
-import { resetCommon, retrieveCommon, updateCommon } from '../../../../common/store/update/actions';
-import { ENTRYPOINT } from "../../../../config/{{{hashEntry}}}_entrypoint";
+import { resetCommon, retrieveCommon, updateCommon } from '@gen/common/store/update/actions';
+import { ENTRYPOINT } from "@gen/config/{{{hashEntry}}}_entrypoint";
 
 export default function(types) {
   const reset = context => {

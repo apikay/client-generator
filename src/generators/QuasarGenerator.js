@@ -193,6 +193,9 @@ export const store = new Vuex.Store({
     ${titleLc}
   }
 });
+
+// Add alias in quasar conf
+"@gen": path.resolve(__dirname, "./src/path/to/generated")
 `)
     );
   }

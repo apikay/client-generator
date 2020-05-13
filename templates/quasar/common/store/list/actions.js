@@ -1,4 +1,4 @@
-import fetch from '../../../utils/fetch';
+import fetch from '@gen/utils/fetch';
 
 export const getItemsCommon = (
   { commit },

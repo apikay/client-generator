@@ -1,1 +1,1 @@
-export { default } from "../../../../common/store/show/mutations";
+export { default } from "@gen/common/store/show/mutations";

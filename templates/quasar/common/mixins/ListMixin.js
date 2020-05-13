@@ -1,5 +1,5 @@
-import { error, success } from '../../utils/notify';
-import { extractDate } from '../../utils/dates';
+import { error, success } from '@gen/utils/notify';
+import { extractDate } from '@gen/utils/dates';
 
 export default {
   created() {

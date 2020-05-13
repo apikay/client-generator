@@ -1,8 +1,8 @@
 import {
   getItemsCommon,
   getSelectItemsCommon
-} from '../../../../common/store/list/actions';
-import { ENTRYPOINT } from "../../../../config/{{{hashEntry}}}_entrypoint";
+} from '@gen/common/store/list/actions';
+import { ENTRYPOINT } from "@gen/config/{{{hashEntry}}}_entrypoint";
 
 const hydraPrefix = '{{{hydraPrefix}}}';
 const page = '{{{name}}}';

@@ -1,5 +1,5 @@
-import SubmissionError from '../../../error/SubmissionError';
-import fetch from '../../../utils/fetch';
+import SubmissionError from '@gen/error/SubmissionError';
+import fetch from '@gen/utils/fetch';
 
 export const resetCommon = ({ commit }, { types }) => {
   commit(types.RESET);

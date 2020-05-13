@@ -1,4 +1,4 @@
-import { extractDate } from '../../utils/dates';
+import { extractDate } from '@gen/utils/dates';
 
 export default {
   created() {

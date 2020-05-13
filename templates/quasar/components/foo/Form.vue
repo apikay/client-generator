@@ -126,9 +126,9 @@
 </template>
 
 <script>
-import { form } from '../../utils/vuexer';
+import { form } from '@gen/utils/vuexer';
 {{#if formContainsDate}}
-import InputDate from '../../common/components/InputDate';
+import InputDate from '@gen/common/components/InputDate';
 {{/if}}
 
 const { getters, actions, mutations } = form([

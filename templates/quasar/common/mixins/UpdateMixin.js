@@ -1,4 +1,4 @@
-import { error, success } from '../../utils/notify';
+import { error, success } from '@gen/utils/notify';
 
 export default {
   data() {

@@ -15,10 +15,10 @@
 </template>
 
 <script>
-import { update } from '../../utils/vuexer';
+import { update } from '@gen/utils/vuexer';
 import {{{titleUcFirst}}}Form from './Form.vue';
-import { Breadcrumb, Toolbar, Loading } from '../../common/components';
-import UpdateMixin from '../../common/mixins/UpdateMixin';
+import { Breadcrumb, Toolbar, Loading } from '@gen/common/components';
+import UpdateMixin from '@gen/common/mixins/UpdateMixin';
 const servicePrefix = '{{{titleUcFirst}}}';
 const { getters, actions } = update(servicePrefix);
 

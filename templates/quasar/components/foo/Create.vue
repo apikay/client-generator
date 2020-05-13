@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import { create } from '../../utils/vuexer';
+import { create } from '@gen/utils/vuexer';
 import {{{titleUcFirst}}}Form from './Form';
-import { Breadcrumb, Toolbar, Loading } from '../../common/components';
-import CreateMixin from '../../common/mixins/CreateMixin';
+import { Breadcrumb, Toolbar, Loading } from '@gen/common/components';
+import CreateMixin from '@gen/common/mixins/CreateMixin';
 const servicePrefix = '{{{titleUcFirst}}}';
 const { getters, actions } = create(servicePrefix);
 

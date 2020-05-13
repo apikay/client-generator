@@ -1,4 +1,4 @@
-import SubmissionError from '../error/SubmissionError';
+import SubmissionError from '@gen/error/SubmissionError';
 
 const MIME_TYPE = 'application/ld+json';
 

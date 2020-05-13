@@ -35,13 +35,13 @@
 </template>
 
 <script>
-import { list } from '../../utils/vuexer';
+import { list } from '@gen/utils/vuexer';
 {{#if parameters.length }}
 import {{{titleUcFirst}}}FilterForm from './Filter';
-import { DataFilter } from '../../common/components';
+import { DataFilter } from '@gen/common/components';
 {{/if}}
-import { ActionCell, Breadcrumb, Toolbar } from '../../common/components';
-import ListMixin from '../../common/mixins/ListMixin';
+import { ActionCell, Breadcrumb, Toolbar } from '@gen/common/components';
+import ListMixin from '@gen/common/mixins/ListMixin';
 const servicePrefix = '{{{titleUcFirst}}}';
 const { getters, actions } = list(servicePrefix);
 

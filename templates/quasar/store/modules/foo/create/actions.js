@@ -1,5 +1,5 @@
-import { createCommon, resetCommon } from '../../../../common/store/create/actions';
-import { ENTRYPOINT } from "../../../../config/{{{hashEntry}}}_entrypoint";
+import { createCommon, resetCommon } from '@gen/common/store/create/actions';
+import { ENTRYPOINT } from "@gen/config/{{{hashEntry}}}_entrypoint";
 
 const page = '{{{name}}}';
 
