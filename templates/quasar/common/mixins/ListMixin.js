@@ -88,7 +88,10 @@ export default {
     },
 
     resetFilter() {
-      this.filters = {};
+      this.filtration = {};
+      this.onRequest({
+        pagination: this.pagination
+      });
     },
 
     addHandler() {
