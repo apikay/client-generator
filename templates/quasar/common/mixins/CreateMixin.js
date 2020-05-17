@@ -24,12 +24,17 @@ export default {
       message && error(message, this.$t('{{{labels.close}}}'));
     },
 
-    onSendForm() {
+    onSendForm(e) {
+      if (e && e.shiftKey) {
+        return true;
+      }
+      e.preventDefault();
       this.$refs.createForm.$children[0].validate().then(success => {
         if (success) {
           this.create(this.item);
         }
       });
+      return false;
     },
 
     resetForm() {

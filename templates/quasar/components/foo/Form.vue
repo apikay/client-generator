@@ -1,5 +1,5 @@
 <template>
-  <q-form class="q-pa-md q-col-gutter-y-md" @keydown.enter.prevent="handleSubmit">
+  <q-form class="q-pa-md q-col-gutter-y-md" @keydown.enter="handleSubmit">
     {{#forEach formFields}}
     {{#ifOdd index}}
     <div class="row q-gutter-md">

@@ -48,12 +48,17 @@ export default {
       this.createReset();
     },
 
-    onSendForm() {
+    onSendForm(e) {
+      if (e && e.shiftKey) {
+        return true;
+      }
+      e.preventDefault();
       this.$refs.updateForm.$children[0].validate().then(success => {
         if (success) {
           this.update(this.item);
         }
       });
+      return false;
     },
 
     resetForm() {

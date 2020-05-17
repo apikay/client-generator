@@ -71,19 +71,19 @@ export default {
     }
   },
   methods: {
-    addItem() {
+    addItem(e) {
       if (this.handleAdd) {
-        this.handleAdd();
+        this.handleAdd(e);
       }
     },
-    submitItem() {
+    submitItem(e) {
       if (this.handleSubmit) {
-        this.handleSubmit();
+        this.handleSubmit(e);
       }
     },
-    resetItem() {
+    resetItem(e) {
       if (this.handleReset) {
-        this.handleReset();
+        this.handleReset(e);
       }
     }
   }
