@@ -22,7 +22,7 @@
     <ConfirmDelete
       v-if="handleDelete"
       :show="confirmDelete"
-      :handle-delete="handleDelete"
+      :handle-delete="() => {confirmDelete = false; handleDelete();}"
       :handle-cancel="() => (confirmDelete = false)"
     />
   </q-td>

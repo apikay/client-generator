@@ -35,7 +35,13 @@ export default function({ id, ep }, options = {}) {
     // credentials: 'include', // when credentials needed
   });
 
-  const entryPoint = ep + (ep.endsWith('/') ? '' : '/');
+  let entryPoint = ep.baseUrl;
+  if (id.startsWith('/')) {
+    id = ep.prefix + id;
+  } else {
+    entryPoint += ep.prefix + ep.basePath;
+  }
+  entryPoint = entryPoint + (entryPoint.endsWith('/') ? '' : '/');
 
   return fetch(new URL(id, entryPoint), options).then(response => {
     if (response.ok) return response;

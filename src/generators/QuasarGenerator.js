@@ -551,9 +551,20 @@ export const store = new Vuex.Store({
       false
     );
 
-    this.createEntrypoint(
-      api.entrypoint,
-      `${dir}/config/${hashEntry}_entrypoint.js`
+    // this.createEntrypoint(
+    //   api.entrypoint,
+    //   `${dir}/config/${hashEntry}_entrypoint.js`
+    // );
+
+    const urlEntry = new URL(api.entrypoint);
+    this.createFile(
+      "entrypoint.js",
+      `${dir}/config/${hashEntry}_entrypoint.js`,
+      {
+        baseUrl: urlEntry.origin,
+        basePath: urlEntry.pathname
+      },
+      false
     );
 
     this.createFile(

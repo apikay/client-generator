@@ -12,19 +12,23 @@ export default {
         sortBy: null,
         descending: false,
         page: 1, // page to be displayed
-        rowsPerPage: 3, // maximum displayed rows
-        rowsNumber: 10, // max number of rows
+        rowsPerPage: 10, // maximum displayed rows
+        rowsNumber: 10 // max number of rows
       },
       nextPage: null,
       filters: {},
-      filtration: {},
-      expandedFilter: false,
+      filtration: this.getInitialFiltration(),
+      expandedFilter: false
     };
   },
 
   watch: {
     error(message) {
       this.onListError(message);
+    },
+
+    deleteError(message) {
+      message && error(message, this.$t('Close'));
     },
 
     items() {
@@ -39,6 +43,10 @@ export default {
   },
 
   methods: {
+    getInitialFiltration() {
+      return {};
+    },
+
     onCreated() {
       this.onRequest({
         pagination: this.pagination
@@ -88,7 +96,7 @@ export default {
     },
 
     resetFilter() {
-      this.filtration = {};
+      this.filtration = this.getInitialFiltration();
       this.onRequest({
         pagination: this.pagination
       });

@@ -12,6 +12,7 @@ export const list = module => {
   const lowmod = module.toLowerCase();
   const getters = mapGetters({
     deletedItem: `${lowmod}/del/deleted`,
+    deleteError: `${lowmod}/del/error`,
     error: `${lowmod}/list/error`,
     items: `${lowmod}/list/items`,
     isLoading: `${lowmod}/list/isLoading`,
